@@ -1,6 +1,6 @@
-# Create React App + TailwindCSS
+# Create React App + Tailwind CSS
 ## (with Purgecss, Autoprefixer, CSSNano)
-It's [Create React App](https://github.com/facebook/create-react-app) but with TailwindCSS config, ready to use  
+It's [Create React App](https://github.com/facebook/create-react-app) but with Tailwind CSS config, ready to use  
 
 
 1. Clone  
