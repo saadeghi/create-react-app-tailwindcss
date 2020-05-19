@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "postcss": "postcss src/tailwind/tailwind.css -o src/style.css",
+    "watch:postcss": "onchange -i 'src/tailwind' -- npm run postcss",
+    "start:react": "react-scripts start",
+    "start": "run-p watch:postcss start:react",
+    "build": "NODE_ENV=production npm run postcss && react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
